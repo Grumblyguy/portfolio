@@ -12,7 +12,7 @@
         <div class="profile">
             <h2 class="main__heading">Liam Armytage</h2>
             <img src="resources/profile2.png" alt="profileImage" class="profileImg">
-            <p class="main__heading"><i>Software Engineer</i></p>
+            <p class="main__heading"><i>Software Engineer<br><b>Quantium</b></br></i></p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/liam-armytage" class="socialLink">
                     <img src="resources/linkedin.png" alt="linkedInPhoto"  class="socialLogos">
@@ -46,12 +46,6 @@
                             Portfolio
                         </a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#contact" class="navbar__links" id="contact-page">
-                            <img src="resources/call.png" alt="contacticon" class="linkLogos">
-                            Contact
-                        </a>
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -64,7 +58,7 @@
                     <p style="margin-bottom: 4rem;max-width: 40vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor leo nec turpis vehicula, id porttitor velit gravida. Pellentesque pellentesque tortor tortor, eget bibendum leo tincidunt non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sodales tortor sed purus condimentum cursus. Praesent id quam suscipit, mattis lorem vitae,</p>
                 </div>
                 <div class="blurbButtonContainer">
-                    <a href="#resume" class="infoButtonGreen"><b>View Resume</b></a>
+                    <a href="#resume" class="infoButtonGreen"><b>Resume</b></a>
                     <a href="#portfolio" class="infoButtonDark"><b>View Portfolio</b></a>
                 </div> 
                    
@@ -78,25 +72,29 @@
                             <img src="resources/pythonlogo.svg" alt="pythonlogo" class="skillLogo" id="pythonlogo">
                             <h5 class="pythonText">Python</h5>
                         </div>
+                        <div class="skillcard" id="kubernetesContainer">
+                            <img src="resources/kubernetes.png" alt="kubernetes" class="skillLogo" id="kuberneteslogo">
+                            <h5 class="kubernetesText">Kubernetes</h5>
+                        </div>
+                        <div class="skillcard" id="azureContainer">
+                            <img src="resources/azure.png" alt="Azurelogo" class="skillLogo" id="azurelogo">
+                            <h5 class="azureText">Azure</h5>
+                        </div>
+                        <div class="skillcard" id="terraformContainer">
+                            <img src="resources/terraform.png" alt="terraformlogo" class="skillLogo" id="terraformlogo">
+                            <h5 class="terraformText">Terraform</h5>
+                        </div>
                         <div class="skillcard" id="reactContainer">
                             <img src="resources/reactnativelogo.png" alt="reactlogo" class="skillLogo" id="reactlogo">
-                            <h5 class="reactText">React Native</h5>
+                            <h5 class="reactText">React</h5>
                         </div>
                         <div class="skillcard" id="cssContainer">
                             <img src="resources/csslogo.png" alt="csslogo" class="skillLogo" id="csslogo">
                             <h5 class="cssText">Css</h5>
                         </div>
-                        <div class="skillcard" id="javaContainer">
-                            <img src="resources/javalogo.png" alt="java" class="skillLogo" id="javalogo">
-                            <h5 class="javaText">Java</h5>
-                        </div>
                         <div class="skillcard" id="htmlContainer">
                             <img src="resources/htmllogo.png" alt="htmllogo" class="skillLogo" id="htmllogo">
                             <h5 class="htmlText">Html</h5>
-                        </div>
-                        <div class="skillcard" id="cContainer">
-                            <img src="resources/clogo.png" alt="Clogo" class="skillLogo" id="clogo">
-                            <h5 class="cText">C</h5>
                         </div>
                         <div class="skillcard" id="agileContainer">
                             <img src="resources/agilelogo.png" alt="agilelogo" class="skillLogo" id="agilelogo">
@@ -114,21 +112,38 @@
                 <h2 style="margin-bottom: 3rem;">Portfolio</h2>
                 <div class="projectCard__container">
                     <div class="project__card">   
-                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <img src="resources/cheepSmall.png" alt="portfolioicon" class="testImage">
+                        <div class="project__info">
+                            <button class="project__button" id="blockchainSocialMedia">
+                                View Project
+                            </button>
+                            <p class="projectInfoText">Decentralised social media application</p>
+                        </div>
+                        <div class="project_skills">
+                            <img src="resources/htmllogo.png" class="smallLogo">
+                            <img src="resources/csslogo.png" class="smallLogo">
+                        </div>
+                    </div>
+                    <div class="project__card">   
+                        <img src="resources/predfSmall.jpg" alt="portfolioicon" class="testImage">
                         <div class="project__info">
                             <button class="project__button" id="socialMediaApp">
                                 View Project
                             </button>
-                            <p class="projectInfoText">Fully functional social media application built using React Native</p>
+                            <p class="projectInfoText">Preference matching app</p>
+                        </div>
+                        <div class="project_skills">
+                            <img src="resources/reactnativelogo.png" class="smallLogo">
+                            <img src="resources/csslogo.png" class="smallLogo">
                         </div>
                     </div>
                     <div class="project__card">   
-                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <img src="resources/candles.png" alt="portfolioicon" class="testImage">
                         <div class="project__info">
                             <button class="project__button" id="crashBot">
                                 View Project
                             </button>
-                            <p class="projectInfoText">A Crypto Trading bot</p>
+                            <p class="projectInfoText">Crypto Trading bot</p>
                         </div>
                     </div>
                     <div class="project__card">   
@@ -140,21 +155,15 @@
                             <p class="projectInfoText">A Crypto Trading bot</p>
                         </div>
                     </div>
-                    <div class="project__card">   
-                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
-                        <div class="project__info">
-                            <button class="project__button" id="sudokuSolver">
-                                View Project
-                            </button>
-                            <p class="projectInfoText">A Crypto Trading bot</p>
-                        </div>
-                    </div>
+                    
                    
 
                 </div>
             </div>
             <div class="portfolioItems" id="portfolioItems">
-                
+                <div class="portfolioItem" id="blockchainSocialMediaClass">
+                    Decentralised app stuff
+                </div>
                 <div class="portfolioItem" id="socialMediaAppClass">
                     <div class="portfolioBlurb">
                         <h2 style="margin-bottom: 2rem;">Social Media Application</h2>
@@ -172,15 +181,18 @@
                 <div class="portfolioItem" id="cryptoTradingBotClass">
                     CryptoStuff
                 </div>
-                <div class="portfolioItem" id="sudokuSolverClass">
-                    SudokuStuff
-                </div>
+                
             </div>
 
 
             <div class="resume2" id="resume">
                 <h2 style="width: 100%;padding-left: 4rem;">Resume</h2>
-                <a class="infoButtonGreen"><b>Download PDF</b></a>
+                <a href="resources/liamResume.pdf" class="infoButtonGreen"><b>Download PDF</b></a>
+                <div class="resume_images">
+                    <img src="resources/resume1.png">
+                    <img src="resources/resume2.png">
+                </div>
+                
                 <div class="resume" id="resume"> </div>
             </div>
             

@@ -36,31 +36,32 @@ var portfolioItems = document.querySelector(".portfolioItems");
 portfolioItems.style.display = 'none';
 var currentPortfolioItem = 'none'
 
-const togglePortfolioApp = (evt) => {
-    var buttonId = evt.currentTarget.myParam;
-    if (portfolioItems.style.display == 'none' || buttonId != currentPortfolioItem){
-        portfolioItems.style.display='';
-        console.log(buttonId);
-        document.getElementById(buttonId+"Class").style.display='';
-        if (currentPortfolioItem != 'none'){
-            console.log("hiding previous")
-            document.getElementById(currentPortfolioItem+"Class").style.display='none';
-        }
-
-        currentPortfolioItem = buttonId;
-        portfolioItems.scrollIntoView();
-    }else {
-        portfolioItems.style.display='none';
-        currentPortfolioItem = 'none';
-    }
-    
-    
-}
 portfolioItemArray = [];
+portfolioItemArray.push(document.getElementById("blockchainSocialMedia"))
 portfolioItemArray.push(document.getElementById("socialMediaApp"))
 portfolioItemArray.push(document.getElementById("crashBot"))
 portfolioItemArray.push(document.getElementById("cryptoTradingBot"))
-portfolioItemArray.push(document.getElementById("sudokuSolver"))
+
+
+const togglePortfolioApp = (evt) => {
+    var buttonId = evt.currentTarget.myParam;
+    if (document.getElementById(buttonId+"Class").style.display == ''){
+        document.getElementById(buttonId+"Class").style.display='none';
+        portfolioItems.style.display='none';
+    }else{
+        for (var x = 0; x < portfolioItemArray.length; x++){
+            if(portfolioItemArray[x].id == buttonId){
+                portfolioItems.style.display='';
+                document.getElementById(portfolioItemArray[x].id+"Class").style.display='';
+                document.getElementById("portfolio").scrollIntoView();
+            }else{
+                document.getElementById(portfolioItemArray[x].id+"Class").style.display='none';
+            }
+        }
+    }
+}
+
+
 
 for (var x = 0; x < portfolioItemArray.length; x++){
     document.getElementById(portfolioItemArray[x].id+"Class").style.display='none';

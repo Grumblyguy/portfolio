@@ -339,7 +339,7 @@ html {
   flex-direction: column;
 }
 
-.pythonText, .reactText, .agileText, .javaText, .jsText, .cText, .htmlText, .cssText {
+.pythonText, .reactText, .agileText, .javaText, .jsText, .cText, .htmlText, .cssText, .kubernetesText, .azureText, .terraformText {
   opacity: 0;
   transition: all 0.2s ease;
 }
@@ -371,6 +371,12 @@ html {
 .skillLogo {
   width: 60%;
   margin-bottom: 5px;
+}
+
+.smallLogo {
+  width: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .skillsText {
@@ -430,7 +436,7 @@ html {
 }
 
 .project__card {
-  background: rgba(42, 98, 158, 0.823);
+  background: rgba(21, 62, 105, 0.823);
   width: 14vw;
   display: flex;
   height: 34vh;
@@ -511,3 +517,15 @@ html {
   width: 70%;
 }
 
+.resume_images {
+  display: flex;
+  flex-direction: row;
+}
+
+.project_skills {
+  display: flex;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 0px;
+  padding-top: 10%;
+}
