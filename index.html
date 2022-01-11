@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Liam Armytage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class=main__container> 
+        <div class="profile">
+            <h2 class="main__heading">Liam Armytage</h2>
+            <img src="/resources/profile2.png" alt="profileImage" class="profileImg">
+            <p class="main__heading"><i>Computer Science Student at UNSW<br> Childcare Supervisor<br>Aspiring Software Engineer</i></p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/liam-armytage" class="socialLink">
+                    <img src="resources/linkedin.png" alt="linkedInPhoto"  class="socialLogos">
+                </a>
+                <a href="https://github.com/grumblyguy/"class="socialLink">
+                    <img src="resources/github.png" alt="githubphoto" class="socialLogos">
+                </a>
+                <a href="https://www.facebook.com/liam.armytage/" class="socialLink">
+                    <img src="resources/facebook.png" alt="facebookPhoto" class="socialLogos">
+                </a>
+            </div>
+            <p style="color: white"><i>liamarmytage@gmail.com</i></p>
+            <p style="color: white"><i>(+61) 435 291 216</i></p>
+            <nav class="navigation">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">
+                            <img src="resources/home.png" alt="homeicon" class="linkLogos">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#resume" class="navbar__links" id="resume-page">
+                            <img src="resources/resume-and-cv.png" alt="resumeicon" class="linkLogos">
+                            Resume
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#portfolio" class="navbar__links" id="services-page">
+                            <img src="resources/portfolio.png" alt="portfolioicon" class="linkLogos">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__links" id="contact-page">
+                            <img src="resources/call.png" alt="contacticon" class="linkLogos">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+               
+        <div class="info">
+            <div class="blurb" id="home">
+                <div style="display: flex; flex-direction: column;"> 
+                    <h1 class="infoHeading"><b>Liam Armytage</b></h1>
+                    <p style="margin-bottom: 3rem;font-size: x-large;">Computer Science Student</p>
+                    <p style="margin-bottom: 4rem;max-width: 40vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor leo nec turpis vehicula, id porttitor velit gravida. Pellentesque pellentesque tortor tortor, eget bibendum leo tincidunt non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sodales tortor sed purus condimentum cursus. Praesent id quam suscipit, mattis lorem vitae,</p>
+                </div>
+                <div class="blurbButtonContainer">
+                    <a href="#resume" class="infoButtonGreen"><b>View Resume</b></a>
+                    <a href="#portfolio" class="infoButtonDark"><b>View Portfolio</b></a>
+                </div> 
+                   
+            </div>
+            <div class="skills">
+                <div style="text-align: center;">
+                    <div style="display: flex; justify-content: center;"><h2 id="skillsText" class="skillsText">Technical Skills</h2></div>
+                    <p style="margin-bottom: 2rem;font-size:x-small;color:grey">(Hover)</p>
+                    <div class="skillCardContainer" id="skillCardContainer">
+                        <div class="skillcard" id="pythonContainer">
+                            <img src="resources/pythonlogo.svg" alt="pythonlogo" class="skillLogo" id="pythonlogo">
+                            <h5 class="pythonText">Python</h5>
+                        </div>
+                        <div class="skillcard" id="reactContainer">
+                            <img src="resources/reactnativelogo.png" alt="reactlogo" class="skillLogo" id="reactlogo">
+                            <h5 class="reactText">React Native</h5>
+                        </div>
+                        <div class="skillcard" id="cssContainer">
+                            <img src="resources/csslogo.png" alt="csslogo" class="skillLogo" id="csslogo">
+                            <h5 class="cssText">Css</h5>
+                        </div>
+                        <div class="skillcard" id="javaContainer">
+                            <img src="resources/javalogo.png" alt="java" class="skillLogo" id="javalogo">
+                            <h5 class="javaText">Java</h5>
+                        </div>
+                        <div class="skillcard" id="htmlContainer">
+                            <img src="resources/htmllogo.png" alt="htmllogo" class="skillLogo" id="htmllogo">
+                            <h5 class="htmlText">Html</h5>
+                        </div>
+                        <div class="skillcard" id="cContainer">
+                            <img src="resources/clogo.png" alt="Clogo" class="skillLogo" id="clogo">
+                            <h5 class="cText">C</h5>
+                        </div>
+                        <div class="skillcard" id="agileContainer">
+                            <img src="resources/agilelogo.png" alt="agilelogo" class="skillLogo" id="agilelogo">
+                            <h5 class="agileText">Agile Development</h5>
+                        </div>
+                        
+                        <div class="skillcard" id="jsContainer">
+                            <img src="resources/jslogo.png" alt="jslogo" class="skillLogo" id="jslogo">
+                            <h5 class="jsText">Javascript</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio" id="portfolio">
+                <h2 style="margin-bottom: 3rem;">Portfolio</h2>
+                <div class="projectCard__container">
+                    <div class="project__card">   
+                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <div class="project__info">
+                            <button class="project__button" id="socialMediaApp">
+                                View Project
+                            </button>
+                            <p class="projectInfoText">Fully functional social media application built using React Native</p>
+                        </div>
+                    </div>
+                    <div class="project__card">   
+                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <div class="project__info">
+                            <button class="project__button" id="crashBot">
+                                View Project
+                            </button>
+                            <p class="projectInfoText">A Crypto Trading bot</p>
+                        </div>
+                    </div>
+                    <div class="project__card">   
+                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <div class="project__info">
+                            <button class="project__button" id="cryptoTradingBot">
+                                View Project
+                            </button>
+                            <p class="projectInfoText">A Crypto Trading bot</p>
+                        </div>
+                    </div>
+                    <div class="project__card">   
+                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
+                        <div class="project__info">
+                            <button class="project__button" id="sudokuSolver">
+                                View Project
+                            </button>
+                            <p class="projectInfoText">A Crypto Trading bot</p>
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+            <div class="portfolioItems" id="portfolioItems">
+                
+                <div class="portfolioItem" id="socialMediaAppClass">
+                    <div class="portfolioBlurb">
+                        <h2 style="margin-bottom: 2rem;">Social Media Application</h2>
+                        <p>A university project based loosely around the idea of social media</p>
+                        <p>The front-end was built entirely using react native, while a combination of mongodb<br>and python completed the back-end</p>
+                    </div>
+                    <div class="portfolioButtons">
+                        Buttons go here
+                    </div>
+                    
+                </div>
+                <div class="portfolioItem" id="crashBotClass">
+                    CrashBotStuff
+                </div>
+                <div class="portfolioItem" id="cryptoTradingBotClass">
+                    CryptoStuff
+                </div>
+                <div class="portfolioItem" id="sudokuSolverClass">
+                    SudokuStuff
+                </div>
+            </div>
+
+
+            <div class="resume2" id="resume">
+                <h2 style="width: 100%;padding-left: 4rem;">Resume</h2>
+                <a class="infoButtonGreen"><b>Download PDF</b></a>
+                <div class="resume" id="resume"> </div>
+            </div>
+            
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
