@@ -506,12 +506,14 @@ html {
 }
 
 .portfolioItem {
-  background-color: beige;
+  background-color: rgba(7, 184, 81, 0.178);
   width: 95%;
   padding: 5rem;
   height: 60vh;
   display: flex;
   border-radius: 25px;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 .portfolioBlurb {
   width: 70%;

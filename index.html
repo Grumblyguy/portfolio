@@ -35,17 +35,17 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#resume" class="navbar__links" id="resume-page">
-                            <img src="resources/resume-and-cv.png" alt="resumeicon" class="linkLogos">
-                            Resume
-                        </a>
-                    </li>
-                    <li class="navbar__item">
                         <a href="#portfolio" class="navbar__links" id="services-page">
                             <img src="resources/portfolio.png" alt="portfolioicon" class="linkLogos">
                             Portfolio
                         </a>
                     </li>
+                    <li class="navbar__item">
+                        <a href="#resume" class="navbar__links" id="resume-page">
+                            <img src="resources/resume-and-cv.png" alt="resumeicon" class="linkLogos">
+                            Resume
+                        </a>
+                    </li>      
                 </ul>
             </nav>
         </div>
@@ -58,7 +58,7 @@
                     <p style="margin-bottom: 4rem;max-width: 40vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor leo nec turpis vehicula, id porttitor velit gravida. Pellentesque pellentesque tortor tortor, eget bibendum leo tincidunt non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sodales tortor sed purus condimentum cursus. Praesent id quam suscipit, mattis lorem vitae,</p>
                 </div>
                 <div class="blurbButtonContainer">
-                    <a href="#resume" class="infoButtonGreen"><b>Resume</b></a>
+                    <a href="#resume" class="infoButtonGreen"><b>View Resume</b></a>
                     <a href="#portfolio" class="infoButtonDark"><b>View Portfolio</b></a>
                 </div> 
                    
@@ -162,18 +162,56 @@
             </div>
             <div class="portfolioItems" id="portfolioItems">
                 <div class="portfolioItem" id="blockchainSocialMediaClass">
-                    Decentralised app stuff
+                    <h1>Cheep - Decentralised social media network</h2>
+                    <p>Cheep is a decentralised social network built on the Ethereum blockchain network. The platform is enabled through Solidity smart contracts which ensures Cheeps’ security and decentralised nature.</p>
+                    <h2 style="padding-top: 5%;">Architecture</h2>
+                    <p>Our smart contract interacts with the browser front-end through web3.js, a collection of libraries which allow you to interact with Ethereum nodes using HTTP, IPC or WebSocket</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: center; padding: 30px;">       
+                        <img src="resources/cheep_architecture.png" style="width: 50%;"> 
+                    </div>
+                    <h2 style="padding-top: 5%;">Interaction with blockchain</h2>
+                    <p>Web3.js provides a Javascript interface to Ethereum blockchain nodes, which contain the business logic and data for our application. This library is used for authentication of Ethereum accounts. It also provides a Javascript interface to an Ethereum smart contract, so that user input from the web interface is seamlessly passed into smart contract function calls. MetaMask is a supported browser extension which stores Ethereum wallets and can be used to pay the fee associated with certain smart contract function calls. 
+                    </p>
+                    <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-between; padding: 30px;">       
+                        <img src="resources/cheep_metamask.png" style="width: 20%;"> 
+                        <img src="resources/cheep_ui.png" style="width: 75%;"> 
+                    </div>
+
+                    <h2 style="padding-top: 5%;">Setup Demonstration</h2>
+                    <a style="padding: 30px;" href="https://youtu.be/hsu-NxV0XIs">https://youtu.be/hsu-NxV0XIs</a>
+
+                    <h2 style="padding-top: 5%;">Technologies involved</h2>
+                    <ul style="padding: 30px;">
+                        <li>React.js</li>
+                        <li>Css</li>
+                        <li>Solidity (language for smart contracts)</li>
+                    </ul>
                 </div>
                 <div class="portfolioItem" id="socialMediaAppClass">
-                    <div class="portfolioBlurb">
-                        <h2 style="margin-bottom: 2rem;">Social Media Application</h2>
-                        <p>A university project based loosely around the idea of social media</p>
-                        <p>The front-end was built entirely using react native, while a combination of mongodb<br>and python completed the back-end</p>
-                    </div>
-                    <div class="portfolioButtons">
-                        Buttons go here
-                    </div>
-                    
+                    <h1>Pref'd - Preference matching application</h2>
+                        <p>Cheep is a decentralised social network built on the Ethereum blockchain network. The platform is enabled through Solidity smart contracts which ensures Cheeps’ security and decentralised nature.</p>
+                        <h2 style="padding-top: 5%;">Architecture</h2>
+                        <p>Our smart contract interacts with the browser front-end through web3.js, a collection of libraries which allow you to interact with Ethereum nodes using HTTP, IPC or WebSocket</p>
+                        <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: center; padding: 30px;">       
+                            <img src="resources/cheep_architecture.png" style="width: 50%;"> 
+                        </div>
+                        <h2 style="padding-top: 5%;">Interaction with blockchain</h2>
+                        <p>Web3.js provides a Javascript interface to Ethereum blockchain nodes, which contain the business logic and data for our application. This library is used for authentication of Ethereum accounts. It also provides a Javascript interface to an Ethereum smart contract, so that user input from the web interface is seamlessly passed into smart contract function calls. MetaMask is a supported browser extension which stores Ethereum wallets and can be used to pay the fee associated with certain smart contract function calls. 
+                        </p>
+                        <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-between; padding: 30px;">       
+                            <img src="resources/cheep_metamask.png" style="width: 20%;"> 
+                            <img src="resources/cheep_ui.png" style="width: 75%;"> 
+                        </div>
+    
+                        <h2 style="padding-top: 5%;">Setup Demonstration</h2>
+                        <a style="padding: 30px;" href="https://youtu.be/hsu-NxV0XIs">https://youtu.be/hsu-NxV0XIs</a>
+    
+                        <h2 style="padding-top: 5%;">Technologies involved</h2>
+                        <ul style="padding: 30px;">
+                            <li>React.js</li>
+                            <li>Css</li>
+                            <li>Solidity (language for smart contracts)</li>
+                        </ul>    
                 </div>
                 <div class="portfolioItem" id="crashBotClass">
                     CrashBotStuff
