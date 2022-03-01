@@ -1,7 +1,21 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
+// API call
 
+const userAction = async () => {
+    const response = await fetch('https://uselessfacts.jsph.pl/random.json?language=en');
+    if (response.status >= 200 && response.status <= 299) {
+        const jsonResponse = await response.json();
+        document.getElementById("description").innerText = jsonResponse["text"]
+      } else {
+        // Handle errors
+        console.log(response.status, response.statusText);
+      }
+}
+
+userAction();
+document.getElementById("description").addEventListener('click', userAction)
 
 var children = document.getElementById("skillCardContainer").children;
 var dict = {}
