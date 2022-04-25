@@ -1,22 +1,6 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
-// API call
-
-const userAction = async () => {
-    const response = await fetch('https://uselessfacts.jsph.pl/random.json?language=en');
-    if (response.status >= 200 && response.status <= 299) {
-        const jsonResponse = await response.json();
-        document.getElementById("description").innerText = jsonResponse["text"]
-      } else {
-        // Handle errors
-        console.log(response.status, response.statusText);
-      }
-}
-
-userAction();
-document.getElementById("description").addEventListener('click', userAction)
-
 var children = document.getElementById("skillCardContainer").children;
 var dict = {}
 const toggleIt = (evt) => {
@@ -53,9 +37,16 @@ var currentPortfolioItem = 'none'
 portfolioItemArray = [];
 portfolioItemArray.push(document.getElementById("blockchainSocialMedia"))
 portfolioItemArray.push(document.getElementById("socialMediaApp"))
-portfolioItemArray.push(document.getElementById("crashBot"))
-portfolioItemArray.push(document.getElementById("cryptoTradingBot"))
+//portfolioItemArray.push(document.getElementById("crashBot"))
+portfolioItemArray.push(document.getElementById("pygame"))
 
+var temp;
+const closeAllPortfolio = () => {
+    temp.style.display ='none';
+    portfolioItems.style.display='none';
+}
+
+document.getElementById("closePortfolio").addEventListener('click', closeAllPortfolio);
 
 const togglePortfolioApp = (evt) => {
     var buttonId = evt.currentTarget.myParam;
@@ -67,7 +58,8 @@ const togglePortfolioApp = (evt) => {
             if(portfolioItemArray[x].id == buttonId){
                 portfolioItems.style.display='';
                 document.getElementById(portfolioItemArray[x].id+"Class").style.display='';
-                document.getElementById("portfolio").scrollIntoView();
+                temp = document.getElementById(portfolioItemArray[x].id+"Class");
+                document.getElementById("portfolioItems").scrollIntoView();
             }else{
                 document.getElementById(portfolioItemArray[x].id+"Class").style.display='none';
             }

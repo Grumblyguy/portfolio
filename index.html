@@ -11,7 +11,7 @@
     <div class=main__container> 
         <div class="profile">
             <h2 class="main__heading">Liam Armytage</h2>
-            <img src="resources/profile2.png" alt="profileImage" class="profileImg">
+            <img src="resources/qoffice.png" alt="profileImage" class="profileImg">
             <p class="main__heading"><i>Software Engineer<br><b>Quantium</b></br></i></p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/liam-armytage" class="socialLink">
@@ -54,8 +54,8 @@
             <div class="blurb" id="home">
                 <div style="display: flex; flex-direction: column;"> 
                     <h1 class="infoHeading"><b>Liam Armytage</b></h1>
-                    <p style="margin-bottom: 3rem;font-size: x-large;">Software Engineer</p>
-                    <p id="description" style="margin-bottom: 4rem;max-width: 40vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor leo nec turpis vehicula, id porttitor velit gravida. Pellentesque pellentesque tortor tortor, eget bibendum leo tincidunt non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sodales tortor sed purus condimentum cursus. Praesent id quam suscipit, mattis lorem vitae,</p>
+                    <p style="margin-bottom: 1rem;font-size: x-large;">Software Engineer</p>
+                    <p id="description" style="margin-bottom: 4rem;max-width: 40vw;">Great at solving problems by Googling them</p>
                 </div>
                 <div class="blurbButtonContainer">
                     <a href="#resume" class="infoButtonGreen"><b>View Resume</b></a>
@@ -138,21 +138,15 @@
                         </div>
                     </div>
                     <div class="project__card">   
-                        <img src="resources/candles.png" alt="portfolioicon" class="testImage">
+                        <img src="resources/flappyGif.gif" alt="portfolioicon" class="testImage">
                         <div class="project__info">
-                            <button class="project__button" id="crashBot">
+                            <button class="project__button" id="pygame">
                                 View Project
                             </button>
-                            <p class="projectInfoText">Crypto Trading bot</p>
+                            <p class="projectInfoText">Pygame Collection</p>
                         </div>
-                    </div>
-                    <div class="project__card">   
-                        <img src="resources/cat.JPG" alt="portfolioicon" class="testImage">
-                        <div class="project__info">
-                            <button class="project__button" id="cryptoTradingBot">
-                                View Project
-                            </button>
-                            <p class="projectInfoText">A Crypto Trading bot</p>
+                        <div class="project_skills">
+                            <img src="resources/pythonlogo.svg" class="smallLogo">
                         </div>
                     </div>
                     
@@ -189,36 +183,59 @@
                 </div>
                 <div class="portfolioItem" id="socialMediaAppClass">
                     <h1>Pref'd - Preference matching application</h2>
-                        <p>Cheep is a decentralised social network built on the Ethereum blockchain network. The platform is enabled through Solidity smart contracts which ensures Cheeps’ security and decentralised nature.</p>
-                        <h2 style="padding-top: 5%;">Architecture</h2>
-                        <p>Our smart contract interacts with the browser front-end through web3.js, a collection of libraries which allow you to interact with Ethereum nodes using HTTP, IPC or WebSocket</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: center; padding: 30px;">       
-                            <img src="resources/cheep_architecture.png" style="width: 50%;"> 
-                        </div>
-                        <h2 style="padding-top: 5%;">Interaction with blockchain</h2>
-                        <p>Web3.js provides a Javascript interface to Ethereum blockchain nodes, which contain the business logic and data for our application. This library is used for authentication of Ethereum accounts. It also provides a Javascript interface to an Ethereum smart contract, so that user input from the web interface is seamlessly passed into smart contract function calls. MetaMask is a supported browser extension which stores Ethereum wallets and can be used to pay the fee associated with certain smart contract function calls. 
-                        </p>
-                        <div style="display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-between; padding: 30px;">       
-                            <img src="resources/cheep_metamask.png" style="width: 20%;"> 
-                            <img src="resources/cheep_ui.png" style="width: 75%;"> 
-                        </div>
-    
-                        <h2 style="padding-top: 5%;">Setup Demonstration</h2>
-                        <a style="padding: 30px;" href="https://youtu.be/hsu-NxV0XIs">https://youtu.be/hsu-NxV0XIs</a>
-    
-                        <h2 style="padding-top: 5%;">Technologies involved</h2>
-                        <ul style="padding: 30px;">
-                            <li>React.js</li>
-                            <li>Css</li>
-                            <li>Solidity (language for smart contracts)</li>
-                        </ul>    
+                    &nbsp;
+                    <h3>Outline</h2>
+                    &nbsp;
+                    <p>A social media application designed to solve the problem of deciding what to do (Where to eat, what movie to watch) between two or more people</p>
+                    &nbsp;     
+                    <h3>Design Stage</h3>
+                    &nbsp;
+                    <p>Following the UCD (User-centered design) process, we first created user story mappings and persona journey mappings to outline the core use cases of our product</p>
+                    <h4>User story mappings</h4>
+                    <img src="resources/prefdUserStoryMap.png">
+                    &nbsp;
+                    <h4>Journey Mappings</h4>
+                    <img src="resources/prefdJourneyMappings.png">
+                    &nbsp;
+                    <h3>Figma Design Mockup</h3>
+                    &nbsp;
+                    <form action="https://www.figma.com/file/DEzOuST7nLVCfmd3zN8s92/Wireframe-NEW?node-id=0%3A1">
+                        <input type="submit" value="Go to Figma Design" class="project__button" style="width: 8rem; margin-bottom: 2rem;"/>
+                    </form>
+                    <img src="resources/prefdFigma.png" class="gameGif">
+                    &nbsp;
+                    <h3>Architecture Design</h3>
+                    &nbsp;
+                    <img src="resources/prefdArchitecture.png">
+                    <h3 style="padding-top: 5%;">Final Demonstration</h2>
+                    <a style="padding: 30px;" href="https://youtu.be/Nbs2FlyYxvc">https://youtu.be/Nbs2FlyYxvc (Unlisted)</a>
+                    
                 </div>
-                <div class="portfolioItem" id="crashBotClass">
-                    CrashBotStuff
+                <div class="portfolioItem" id="pygameClass">
+                    <h2>Pygame collection</h2>
+                    <p>A collection of simple games I worked on when bored (Recreating old flash games I used to play)</p>
+                    &nbsp;
+                    <h4>Bloons Tower Defence</h4>
+                    &nbsp;
+                    <img src="resources/balloonGif.gif" class="gameGif"/>
+                    &nbsp;
+                    <h4>Basic Dungeon Game</h4>
+                    &nbsp;
+                    <img src="resources/dungeonGif.gif" class="gameGif"/>
+                    &nbsp;
+                    <h4>Flappy bird</h4>
+                    &nbsp;
+                    <img src="resources/flappyGif.gif" class="gameGif"/>
+                    &nbsp;
+                    <h4>Wordle</h4>
+                    &nbsp;
+                    <img src="resources/wordleGif.gif" class="gameGif"/>
+                    &nbsp;
+                    <h4>Bowman</h4>
+                    &nbsp;
+                    <img src="resources/bowmanGif.gif" class="gameGif"/>
                 </div>
-                <div class="portfolioItem" id="cryptoTradingBotClass">
-                    CryptoStuff
-                </div>
+                <a id="closePortfolio" class="infoButtonGreen" style="margin: 3rem;" href="#portfolio">Back to portfolio</a>
                 
             </div>
 
